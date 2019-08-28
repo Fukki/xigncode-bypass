@@ -1,0 +1,12 @@
+{
+    "name": "xigncode-bypass",
+    "category": "client",
+    "options": {
+        "guiName": "Xigncode Bypass"
+    },
+    "author": "Caali (edit by Fukki)",
+    "description": "Stop the Xigncode and make you to run multiple client.",
+    "servers": ["https://raw.githubusercontent.com/Fukki/xigncode-bypass/master/"],
+    "supportUrl": "https://github.com/zc149352394/Fukki/xigncode-bypass/issues",
+    "version": "Kappa :v"
+}
