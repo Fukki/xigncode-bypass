@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const ProcessListener = require("./process-listener");
+const {scan_interval: SCAN_INTERVAL, wait_rename: WAIT_RENAME} = require('./config.json');
 let PatchedProcesses = {}, RenameTimer = null;
 function HandleAddedProcess(process) {
 	try {
@@ -26,7 +27,7 @@ function HandleAddedProcess(process) {
 			renameFile(x3Tmp + "\\x3.xem", XigncodeFolder + "\\x3.xem");
 			renameFile(x3Tmp + "\\xcorona.xem", XigncodeFolder + "\\xcorona.xem");
 			RenameTimer = null;
-		}, 2000);
+		}, WAIT_RENAME);
 	} catch(e) {
 	}
 }
@@ -55,6 +56,6 @@ function renameFile(filePath, toPath) {
 }
 
 module.exports = function XigncodeBypass(region) {
-	ProcessListener("TERA.exe", HandleAddedProcess, HandleRemovedProcess, 100);
+	ProcessListener("TERA.exe", HandleAddedProcess, HandleRemovedProcess, SCAN_INTERVAL);
 	deleteFile("C:\\Windows\\xhunter1.sys");
 }

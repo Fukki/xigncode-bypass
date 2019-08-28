@@ -1,7 +1,6 @@
 {
 	"files": {
-		"index.js": "762c30707fd8248fec97bc1a03e6e9e83964e60e3f329ec82888af293db2aae6",
-		"module.json": "aeb717e8ff260b84e7d68839e1699d680c0b531ceb35b09e1e57d1782179d3f8",
+		"index.js": "05a5d8a5013b9e29ce9a9c3c52f3eb5ec15a68944f8904212e6a224dba5b3356",
 		"process-listener.js": "7a531c7a1676a6ed5ac458306a77a5a2ff028ff23c2b9eded33bbdeccd5b020d",
 		"res/x3.xem": "f1ab442abd23cc09508fe1529d907b081a3ff9f1ca89dbdf3ebcdf2359e3377e",
 		"res/xcorona.xem": "0074a844416c216ab1c10108545ab0ec27d5d0a8928fab0db4f2f0194fc6423a"
